@@ -1,0 +1,101 @@
+/* Login form styles */
+
+.global-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e7e8;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #15589c 0%, #159c63 20%, #9c7b15 40%, #9c1558 60%, #7b159c 80%, #15589c 100%);
+    background-image: linear-gradient(to bottom, #3bbd40, #d5ee15);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  .card.login-form {
+    width: 350px;
+    margin: 0 auto;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  }
+  
+  .card.login-form .card-body {
+    padding: 30px;
+  }
+  
+  .card.login-form .card-title {
+    margin-bottom: 30px;
+  }
+  
+  .card.login-form .card-text {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .sign-up {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #f5efef;
+  }
+  
+  /* Responsive styles */
+  
+  @media screen and (max-width: 708px) {
+    .card.login-form {
+      width: 90%;
+    }
+  }
+  
+  .card.login-form button[type="submit"] {
+    margin-top: 30px;
+    margin-right: 0;
+    margin-left: auto;
+    display: block;
+  }
+  
+  /* Bootstrap styles */
+  
+  .card.login-form input[type="text"],
+  .card.login-form input[type="password"] {
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    box-shadow: inset 0px 0px 0px 1px #e5e7e8;
+  }
+  
+  .card.login-form input[type="text"]:focus,
+  .card.login-form input[type="password"]:focus {
+    box-shadow: inset 0px 0px 0px 1px #ced4da;
+  }
+  
+  .card.login-form button[type="submit"] {
+    background-color: #3bbd40;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card.login-form button[type="submit"]:hover {
+    background-color: #2d8a32;
+  }
+  

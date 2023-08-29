@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<style>
+    .z{
+        padding-left: 600px;
+        padding-top: 200px;
+    }
+</style>
+<div class = "z">
+    <h1>{{scholarship.uni_name}}</h1>
+    <h5>Major: {{scholarship.major}}</h5>
+    <h5>Level: {{scholarship.level}}</h5>
+    <h5>Language: {{scholarship.language}}</h5>
+    <h5>Ogininal Tuition: {{scholarship.org_tuition}}</h5>
+    <h5>Tuition to be paid: {{scholarship.to_be_paid_tuition}}</h5>
+    <h5>Tuition Covered: {{scholarship.tuition_covered}}</h5>
+    <h5>Percentage of Scholarship Exempted: {{scholarship.per_sch}}</h5>
+    <h5>Accomodation Covered?: {{scholarship.accomodation}}</h5>
+    <h5>Cost of Accomodation: {{scholarship.amt_accomodation}}</h5>
+    <h5>Living Expense Covered?: {{scholarship.living}}</h5>
+    <h5>Cost of Living: {{scholarship.amt_living}}</h5>
+    <h5>Application started from: {{scholarship.month}}, {{scholarship.year}}</h5>
+    <h5>Tuition Covered: {{scholarship.tuition_covered}}</h5>
+</div>
+
+
+
+
+<!--<h5>For {{scholarship.education}} Students</h5>-->
+<!--<h5>Applicable for genders: </h5> 
+{% for gender in scholarship.gender.all %}
+    <ul>
+        <li>
+                <h5>{{gender}}</h5>
+        </li>
+    </ul>
+{% endfor %}
+
+<h5>Applicable for following courses</h5>
+{% for course in scholarship.course.all %}
+<ul>
+    <li>
+        <h5>{{course}}</h5>
+    </li>
+</ul> 
+{% endfor %}
+
+<h5>Eligibility Criteria(s)</h5>
+{% for eligibility in scholarship.eligibility.all %}
+<ul>
+    <li>
+        <h5>{{eligibility}}</h5> 
+    </li>
+</ul>
+{% endfor %}
+
+<h5>Last Date to Apply: {{scholarship.last_date}}</h5>
+
+{% endblock content %}
+-->

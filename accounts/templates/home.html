@@ -1,0 +1,65 @@
+{% extends "base.html"%}
+
+    {% block content %}
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles\home.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-WGQvStVcCGd8iQI5C5uRzvB0KxW8z3qV7pBtCKaO1F0Dgj/Ktn0PTaBLwOQGdSZjx8xXpjz04IccLH2QIXGd6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--<div class="global-container">
+        
+    </div>--> 
+    
+    <nav class="navbar" class="navbar background">
+        <ul class="nav-list">
+            <!--<div class="logo"><img src="css/images.png" alt="logo"> </div>--> 
+            <h1>Scholarship Buddy</h1>
+            <br>
+            <div class="card login-form">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Welcome, {{request.user.username}}</h3>
+                    
+                    </div>
+                </div>
+                <br><br>
+            </div>
+
+            <!--<a href="/logout/" class="btn btn-danger">Logout</a>-->  
+            
+
+            <li><a href="{% url 'browse' %}">Browse Scholarships</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">   Contact</a></li>
+
+                {% if request.user.is_authenticated %}
+                <li><a href="/logout/">Log Out</a></li>
+                {% else %}
+                <li><a href="{% url  'login_attempt' %}">Log In</a></li>
+                <li><a href="{% url  'register_attempt' %}">Register</a></li>
+                {% endif %}
+            <li><a href="{% url 'add-scholarship' %}">Add New Scholarship</a></li>
+                
+
+            
+            
+        </ul>
+        <div class="rightnav">
+            <form action="{% url 'home' %}" method="GET">
+                <input type="text" name="q" placeholder="Search Scholarships...">
+            </form>
+        </div>
+    </nav>
+    <section class="background firstsection">
+        
+        <div class="box-main">
+            <div class="firsthalf">
+                
+                <p class="text-small">Here We Are To Give  Wings To Your Dream!!</p>
+            </div>
+
+        </div>
+
+    
+</section>
+    
+
+    {% endblock %}

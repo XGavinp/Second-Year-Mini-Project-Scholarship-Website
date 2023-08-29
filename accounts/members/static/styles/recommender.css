@@ -1,0 +1,49 @@
+/* Import Bootstrap */
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #15589c 0%, #159c63 20%, #9c7b15 40%, #9c1558 60%, #7b159c 80%, #15589c 100%);
+    background-image: linear-gradient(to bottom, #e87b23, #e8ec14);
+    background-size: 500% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Add Bootstrap classes to existing elements */
+.card {
+    width: 350px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-title {
+    margin-bottom: 30px;
+}
+
+.card-text {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    margin-top: 30px;
+    margin-right: 0;
+    margin-left: auto;
+    display: block;
+}

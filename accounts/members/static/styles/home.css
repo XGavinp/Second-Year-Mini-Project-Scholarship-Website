@@ -1,0 +1,127 @@
+/* reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body styles */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(90deg, #15589c 0%, #159c63 20%, #9c7b15 40%, #9c1558 60%, #7b159c 80%, #15589c 100%);
+  background-image: linear-gradient(to bottom, #ADD8E6, #F0E68C);
+  background-size: 300% 300%;
+  background-blend-mode: lighten;
+}
+
+/* header styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  background-color: #15589c;
+  color: rgb(167, 27, 27);
+}
+
+.logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 60%;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.navbar-ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-ul li {
+  padding: 26px 30px;
+}
+
+.navbar-ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-ul li a:hover {
+  color: rgba(255, 255, 255, 0.27);
+}
+
+.rightnav {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#search {
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid grey;
+  border-radius: 9px;
+}
+
+/* main section styles */
+.main-section {
+  height: 100vh;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.box-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  max-width: 50%;
+  height: 80%;
+  margin: auto;
+}
+
+.first-half {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-small {
+  font-size: 50px;
+}
+
+.btn {
+  /* replace custom styles with Bootstrap classes */
+  margin-top: 250px;
+  margin-left: -400px;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  background: none;
+}
+  
+.btn:hover {
+  padding: 8px 20px;
+  margin: 7px 0px;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  background: none;
+  margin-left: -400px;
+  background-color: #3498db;
+}

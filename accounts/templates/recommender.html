@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles\recommender.css' %}">
+    <h1>Scholarship Recommendation</h1>
+    <hr>
+    {% if result %}
+        <h1>Suitable University would be {{result}}</h1>
+    {% endif %}
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        Major : <input type="text" name="Key" required><br>
+        Level : <input type="text" name="Level" required><br>
+        Language : <input type="text" name="Language" required><br>
+        Accomodation covered? : <input type="text" name="Accomodation covered?" required><br>
+        Living Expense Covered? : <input type="text" name="Living Expense Covered?" required><br>
+        <input type="submit">
+    </form>
+
+
+{% endblock %}

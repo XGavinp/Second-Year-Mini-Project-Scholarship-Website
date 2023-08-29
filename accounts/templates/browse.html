@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% load static %}
+
+    
+    <link rel="stylesheet" href="{% static 'styles\browse.css' %}">
+
+<h1 class="a">Browse Scholarships</h1>
+<hr>
+
+
+
+<div>
+    <div>
+        {% for scholarship in scholarships %}
+        <br>
+        <h5 class = "a"><a href="{% url 'information' scholarship.id %}">{{scholarship.uni_name}}</a></h5>
+        <p class = "a">Major: {{scholarship.major}}</p>
+        <p class = "a">Percentage of scholarship covered: {{scholarship.per_sch}}%</p>
+        <br>
+        <hr>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content %}
+
+<!--{% url 'information' scholarship.id %}
+#{{scholarship.id}} -- -->  
